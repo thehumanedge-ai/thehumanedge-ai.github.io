@@ -1,0 +1,34 @@
+{
+  "slug": "elevenai",
+  "title": "ElevenAI: the new AI meeting-notes app from ElevenLabs",
+  "intro": "ElevenLabs, the company known for AI voices, launched ElevenAI on November 13, 2026. It listens to your video calls, writes the notes, labels who said what, and types for you when you talk, in any app.",
+  "reel": "From the reel: Three things to know before an AI writes your meeting notes",
+  "sections": [
+    {
+      "heading": "The 3 things to know",
+      "steps": [
+        "It's still a preview. You sign up for early access to get it.",
+        "ElevenLabs says it doesn't store your audio, and your transcript history stays on your Mac.",
+        "Everyone in the call gets told: ElevenAI shows a notice in the meeting chat (Google Meet) and on video. Make sure people who join by phone or with video off get told too."
+      ]
+    },
+    {
+      "heading": "Not for these meetings",
+      "steps": [
+        "Their own guide says not to use it for meetings with health information, financial information, privileged legal talks, children, or other sensitive meetings, unless your agreement with ElevenLabs allows it.",
+        "If someone on the call doesn't agree, don't use it."
+      ]
+    },
+    {
+      "heading": "Read it yourself",
+      "tools": [
+        { "name": "ElevenAI page", "what": "What it does, early access sign-up, and the note about your audio and your Mac.", "link": "https://elevenlabs.io/elevenai", "tags": ["official"] },
+        { "name": "ElevenAI usage guide", "what": "How the notice works and which meetings to avoid.", "link": "https://elevenlabs.io/elevenai-guide", "tags": ["official"] },
+        { "name": "TechCrunch, Nov 13 2026", "what": "The launch report.", "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/", "tags": ["news"] }
+      ]
+    }
+  ],
+  "note": "The AI takes the notes. You still decide who gets told.",
+  "sources": ["https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/", "https://elevenlabs.io/elevenai", "https://elevenlabs.io/elevenai-guide"],
+  "updated": "2026-11-18"
+}
