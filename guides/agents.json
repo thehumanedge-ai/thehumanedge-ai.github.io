@@ -1,0 +1,67 @@
+{
+  "slug": "agents",
+  "title": "3 free tools for AI coding agents",
+  "intro": "A coding agent is an AI, like Claude Code or Codex, that writes and changes code for you. These free tools help you run more of them, keep their memory, and check their work.",
+  "reel": "From the reel: Stop babysitting your AI coding agents",
+  "sections": [
+    {
+      "heading": "The three from the reel",
+      "tools": [
+        {
+          "name": "Worktrunk",
+          "what": "Gives each agent its own copy of your project, so you can run several at once without them clashing.",
+          "link": "https://github.com/max-sixty/worktrunk",
+          "copy": [
+            { "label": "Install (Mac)", "text": "brew install worktrunk && wt config shell install" },
+            { "label": "Install (any, with Rust)", "text": "cargo install worktrunk && wt config shell install" }
+          ],
+          "tags": ["free", "open source"]
+        },
+        {
+          "name": "claude-mem",
+          "what": "Remembers what your agent did, so the next session starts where you left off. Works with Claude Code, Codex, Gemini and more.",
+          "link": "https://github.com/thedotmack/claude-mem",
+          "copy": [
+            { "label": "Install", "text": "npx claude-mem install" },
+            { "label": "Turn off usage stats (on by default)", "text": "npx claude-mem telemetry disable" }
+          ],
+          "tags": ["free", "open source"]
+        },
+        {
+          "name": "Plannotator",
+          "what": "Shows you the agent's plan before it builds, so you can mark it up and say yes or no.",
+          "link": "https://github.com/backnotprop/plannotator",
+          "copy": [
+            { "label": "In Claude Code, step 1", "text": "/plugin marketplace add backnotprop/plannotator" },
+            { "label": "In Claude Code, step 2", "text": "/plugin install plannotator@plannotator" }
+          ],
+          "tags": ["free", "open source"]
+        }
+      ]
+    },
+    {
+      "heading": "A few more",
+      "tools": [
+        {
+          "name": "T3 Code",
+          "what": "Control Claude Code, Codex and more from any computer or your phone.",
+          "link": "https://t3.codes/download",
+          "copy": [ { "label": "Install (Mac)", "text": "brew install --cask t3-code" } ],
+          "tags": ["free", "open source"]
+        },
+        {
+          "name": "Vibe Kanban",
+          "what": "A board where you hand tasks to coding agents and watch each one move from to-do to done.",
+          "link": "https://github.com/BloopAI/vibe-kanban",
+          "copy": [ { "label": "Run", "text": "npx vibe-kanban" } ],
+          "tags": ["free", "open source"]
+        }
+      ]
+    }
+  ],
+  "note": "The agent writes the code. You still decide what gets built.",
+  "sources": [
+    "Each tool's own GitHub page, checked Nov 17, 2026"
+  ],
+  "updated": "2026-11-17"
+}

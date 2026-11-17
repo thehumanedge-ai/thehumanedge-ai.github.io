@@ -1,0 +1,22 @@
+{
+  "brand": "The Human Edge",
+  "handle": "@thehumanedge.ai",
+  "profile_url": "https://www.instagram.com/thehumanedge.ai/",
+  "colors": {
+    "paper": "#EFEBE1",
+    "card": "#FFFFFF",
+    "ink": "#121212",
+    "soft": "#6F6B63",
+    "line": "#121212",
+    "accent": "#C8352D",
+    "accent_ink": "#F7F2E8",
+    "shadow": "#CFC6B6"
+  },
+  "fonts": {
+    "display": "Bowlby One",
+    "body": "Bricolage Grotesque",
+    "mono": "JetBrains Mono"
+  },
+  "mascot": "assets/character.png",
+  "footer": "Made by The Human Edge. Skills beat hype."
+}
