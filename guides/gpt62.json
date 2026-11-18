@@ -1,0 +1,30 @@
+{
+  "slug": "gpt62",
+  "title": "GPT-6.2: Astra and Sol, what changed in ChatGPT",
+  "intro": "OpenAI released GPT-6.2 on November 17, 2026, in two models: Astra for your hardest work, and Sol for everyday work. Here are the sources from the reel so you can read them yourself.",
+  "reel": "From the reel: OpenAI dropped GPT-6.2. Three things to know before you switch.",
+  "sections": [
+    {
+      "heading": "What the reel said",
+      "steps": [
+        "Sol is the cheaper model. On one coding test (FrontierCode 2.0) it came within half a point of Astra at about a fifth of the cost, as OpenAI reports it.",
+        "It's for paid plans: Plus, Pro, Enterprise and Edu, in ChatGPT and Codex. Free isn't on the list.",
+        "Pro plans also get Ultrafast: up to 4.5 times faster, but it uses more of your usage limit.",
+        "Early testers reported loops and tasks stopped too early. OpenAI says it made big changes in the last three to four days before launch.",
+        "Try it on a small task first, before you trust it with a big one."
+      ]
+    },
+    {
+      "heading": "Sources",
+      "tools": [
+        { "name": "OpenAI: Introducing GPT-6.2 Astra and Sol", "what": "OpenAI's own announcement.", "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol/", "tags": ["official"] },
+        { "name": "9to5Mac, Nov 17 2026", "what": "Plans, Ultrafast, and the coding-test result.", "link": "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/", "tags": ["news"] },
+        { "name": "The Decoder, Nov 17 2026", "what": "What each model is for.", "link": "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/", "tags": ["news"] },
+        { "name": "Android Authority, Nov 18 2026", "what": "Early testers' problems and OpenAI's reply.", "link": "https://www.androidauthority.com/openai-gpt-6-2-astra-sol-3736420/", "tags": ["news"] }
+      ]
+    }
+  ],
+  "note": "Start with Sol for everyday work. Test small before you trust it with big.",
+  "sources": ["https://openai.com/index/introducing-gpt-6-2-astra-sol/", "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/", "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/", "https://www.androidauthority.com/openai-gpt-6-2-astra-sol-3736420/"],
+  "updated": "2026-11-18"
+}
