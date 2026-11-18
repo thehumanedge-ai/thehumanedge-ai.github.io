@@ -7,10 +7,43 @@
     {
       "heading": "The four skills",
       "tools": [
-        { "name": "Bang Motion", "what": "Openers, promos, moving text and explainers that move like video, not slides. It builds a web page (HTML) that you record as a video.", "link": "https://github.com/bangtutorial/bang-motion", "tags": ["MIT", "free"] },
-        { "name": "Claude Remotion Skill", "what": "Teaches Claude motion rules for Remotion videos: smooth easing, things that come in one by one, faster exits, and checking frames after every render.", "link": "https://github.com/haidrrrry/claude-remotion-skill", "tags": ["MIT", "free", "Remotion"] },
-        { "name": "Anything2Explainer", "what": "Turns a topic into a narrated explainer video with subtitles and a chapter bar, made with Remotion. Free only for non-commercial use; commercial use needs the author's permission.", "link": "https://github.com/Vincentwei1021/anything2explainer", "tags": ["non-commercial", "Remotion"] },
-        { "name": "Hand-Drawn Explainer", "what": "Draws the picture line by line while the voice talks, like a whiteboard. Made for Chinese videos first.", "link": "https://github.com/hi-nikola/hand-drawn-explainer-video-nikola", "tags": ["Apache 2.0", "free"] }
+        {
+          "name": "Bang Motion",
+          "what": "Openers, promos, moving text and explainers that move like video, not slides. It builds a web page (HTML) that you record as a video.",
+          "link": "https://github.com/bangtutorial/bang-motion",
+          "tags": [
+            "MIT",
+            "free"
+          ]
+        },
+        {
+          "name": "Claude Remotion Skill",
+          "what": "Teaches Claude motion rules for Remotion videos: smooth easing, things that come in one by one, faster exits, and checking frames after every render.",
+          "link": "https://github.com/haidrrrry/claude-remotion-skill",
+          "tags": [
+            "MIT",
+            "free",
+            "Remotion"
+          ]
+        },
+        {
+          "name": "Anything2Explainer",
+          "what": "Turns a topic into a narrated explainer video with subtitles and a chapter bar, made with Remotion. Free only for non-commercial use; commercial use needs the author's permission.",
+          "link": "https://github.com/Vincentwei1021/anything2explainer",
+          "tags": [
+            "non-commercial",
+            "Remotion"
+          ]
+        },
+        {
+          "name": "Hand-Drawn Explainer",
+          "what": "Draws the picture line by line while the voice talks, like a whiteboard. Made for Chinese videos first.",
+          "link": "https://github.com/hi-nikola/hand-drawn-explainer-video-nikola",
+          "tags": [
+            "Apache 2.0",
+            "free"
+          ]
+        }
       ]
     },
     {
@@ -23,6 +56,12 @@
     }
   ],
   "note": "Free skills, but check the licence before paid work.",
-  "sources": ["https://github.com/bangtutorial/bang-motion", "https://github.com/haidrrrry/claude-remotion-skill", "https://github.com/Vincentwei1021/anything2explainer", "https://github.com/hi-nikola/hand-drawn-explainer-video-nikola"],
-  "updated": "2026-11-18"
+  "sources": [
+    "https://github.com/bangtutorial/bang-motion",
+    "https://github.com/haidrrrry/claude-remotion-skill",
+    "https://github.com/Vincentwei1021/anything2explainer",
+    "https://github.com/hi-nikola/hand-drawn-explainer-video-nikola"
+  ],
+  "updated": "2026-11-18",
+  "cover": "assets/covers/skills.jpg"
 }
