@@ -1,0 +1,26 @@
+{
+  "slug": "case",
+  "title": "The court case where ChatGPT made up the cases",
+  "intro": "In 2023, lawyers in a New York case against an airline asked ChatGPT for past court cases. It gave them cases with names, dates and quotes. None of them existed. The judge fined the lawyers and their firm $5,000.",
+  "reel": "From the reel: Stop trusting AI with facts you can't check.",
+  "sections": [
+    {
+      "heading": "The court's order",
+      "tools": [
+        { "name": "Mata v. Avianca: Opinion and Order on Sanctions", "what": "U.S. District Court, Southern District of New York, June 22, 2023. The judge says using a reliable AI tool is not wrong in itself. The penalty was for not checking, and for standing by the fake cases after the court questioned them.", "link": "https://ctd.uscourts.gov/sites/default/files/Mata-v.-Avianca.pdf", "tags": ["court order", "PDF"] }
+      ]
+    },
+    {
+      "heading": "Before you use a fact from AI",
+      "steps": [
+        "Ask the AI where the fact comes from.",
+        "Open that source yourself. If you can't find it, don't use the fact.",
+        "Check that the source really says what the AI said it says.",
+        "If you'll stand behind it, you open it."
+      ]
+    }
+  ],
+  "note": "AI can write something that sounds true and isn't. Open the source yourself.",
+  "sources": ["https://ctd.uscourts.gov/sites/default/files/Mata-v.-Avianca.pdf"],
+  "updated": "2026-11-18"
+}

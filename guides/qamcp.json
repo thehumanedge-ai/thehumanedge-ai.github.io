@@ -1,0 +1,29 @@
+{
+  "slug": "qamcp",
+  "title": "QAmcp: check any MCP server before you install it",
+  "intro": "MCP servers are plugins that give your AI new powers. Anyone can publish one, and your AI trusts it completely. QAmcp is a free, open-source tool that tests a server first and gives it a score out of 100. Real checks, no AI guessing.",
+  "reel": "From the reel: Three things one free command checks before you install any MCP server.",
+  "sections": [
+    {
+      "heading": "Get it",
+      "tools": [
+        { "name": "QAmcp", "what": "Runs on your computer. Needs Node.js.", "link": "https://qamcp.dev", "tags": ["free", "open source"], "copy": [
+          { "label": "Try it on the broken demo server first", "text": "npx qamcp-cli --demo" },
+          { "label": "Test a real server (put its link at the end)", "text": "npx qamcp-cli <server link>" }
+        ] },
+        { "name": "Code", "what": "The source and the full list of checks.", "link": "https://github.com/QAmcp/qamcp-cli", "tags": ["GitHub"] }
+      ]
+    },
+    {
+      "heading": "What it checks",
+      "steps": [
+        "Does it connect and answer properly?",
+        "Do its tools work, or does one never answer?",
+        "Security: hidden instructions, leaked passwords, and login."
+      ]
+    }
+  ],
+  "note": "Check it first. Then decide if your AI should trust it.",
+  "sources": ["https://qamcp.dev", "https://github.com/QAmcp/qamcp-cli"],
+  "updated": "2026-11-18"
+}

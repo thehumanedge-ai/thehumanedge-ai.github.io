@@ -1,0 +1,33 @@
+{
+  "slug": "daily",
+  "title": "3 MCPs that let your AI do your daily work",
+  "intro": "MCP is a plug that connects your AI to another app, so it can open it and use it. These three connect it to your files, your email and calendar, and your notes. They work in AI apps that support MCP, like Claude.",
+  "reel": "From the reel: Stop copying emails into Claude. Let your AI open them itself.",
+  "sections": [
+    {
+      "heading": "The three plugs",
+      "tools": [
+        { "name": "Filesystem MCP", "what": "Your AI can open, search and tidy files on your computer. It only touches the folders you allow.", "link": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem", "tags": ["official", "free"] },
+        { "name": "Google Workspace MCP", "what": "Connects Gmail, Calendar and Drive. Made by the community, not by Google. It has a read-only mode: turn that on first, so it can look but can't send.", "link": "https://github.com/taylorwilsdon/google_workspace_mcp", "tags": ["community", "MIT", "read-only mode"] },
+        { "name": "Notion MCP", "what": "Notion's own MCP. Your AI can create and edit pages and manage databases.", "link": "https://developers.notion.com/docs/mcp", "tags": ["official"] }
+      ]
+    },
+    {
+      "heading": "Set it up in Claude",
+      "steps": [
+        "Read Claude's guide to custom connectors (link below). Claude supports them on every plan; the Free plan is limited to one.",
+        "Add one plug at a time and try a small question first, like \"What did my landlord email about?\"",
+        "Give each plug only the access it needs: only the folders it should see, and read-only for email until you trust it."
+      ]
+    },
+    {
+      "heading": "Read it yourself",
+      "tools": [
+        { "name": "Claude: custom connectors", "what": "How to add an MCP connector in Claude.", "link": "https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp", "tags": ["official"] }
+      ]
+    }
+  ],
+  "note": "Files, email, notes. Just give it only the access it needs.",
+  "sources": ["https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem", "https://github.com/taylorwilsdon/google_workspace_mcp", "https://developers.notion.com/docs/mcp", "https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp"],
+  "updated": "2026-11-18"
+}
