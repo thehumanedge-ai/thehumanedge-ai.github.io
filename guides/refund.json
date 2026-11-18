@@ -1,0 +1,27 @@
+{
+  "slug": "refund",
+  "title": "The chatbot that made up a refund rule",
+  "intro": "Air Canada's website chatbot told a grieving passenger he could ask for the cheaper bereavement fare within 90 days. The airline's own page said you can't claim it after travel. The B.C. Civil Resolution Tribunal made the airline pay.",
+  "reel": "From the reel: An airline's chatbot made up a refund rule. Then the airline said the chatbot wasn't its problem.",
+  "sections": [
+    {
+      "heading": "The ruling",
+      "tools": [
+        { "name": "Moffatt v. Air Canada, 2024 BCCRT 149", "what": "B.C. Civil Resolution Tribunal, February 14, 2024. Air Canada argued the chatbot was a separate legal entity; the tribunal called that \"a remarkable submission\" and ordered $812.02 CAD (damages, interest and fees). It's a tribunal for small claims, not a court.", "link": "https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html", "tags": ["the decision"] },
+        { "name": "American Bar Association, Feb 2024", "what": "A plain summary of the decision and what it means for companies.", "link": "https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-february/bc-tribunal-confirms-companies-remain-liable-information-provided-ai-chatbot/", "tags": ["summary"] }
+      ]
+    },
+    {
+      "heading": "What to do",
+      "steps": [
+        "If your business uses a chatbot, treat every answer it gives as your own. Check what it says about prices, refunds and rules.",
+        "If a chatbot promises you something, take a screenshot with the date showing.",
+        "If the bot and the company's page disagree, ask a person before you pay."
+      ]
+    }
+  ],
+  "note": "You own every answer your chatbot gives.",
+  "sources": ["https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html", "https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-february/bc-tribunal-confirms-companies-remain-liable-information-provided-ai-chatbot/"],
+  "updated": "2026-11-18",
+  "cover": "assets/covers/refund.jpg"
+}

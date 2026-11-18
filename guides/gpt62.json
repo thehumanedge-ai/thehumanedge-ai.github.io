@@ -17,14 +17,48 @@
     {
       "heading": "Sources",
       "tools": [
-        { "name": "OpenAI: Introducing GPT-6.2 Astra and Sol", "what": "OpenAI's own announcement.", "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol/", "tags": ["official"] },
-        { "name": "9to5Mac, Nov 17 2026", "what": "Plans, Ultrafast, and the coding-test result.", "link": "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/", "tags": ["news"] },
-        { "name": "The Decoder, Nov 17 2026", "what": "What each model is for.", "link": "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/", "tags": ["news"] },
-        { "name": "Android Authority, Nov 18 2026", "what": "Early testers' problems and OpenAI's reply.", "link": "https://www.androidauthority.com/openai-gpt-6-2-astra-sol-3736420/", "tags": ["news"] }
+        {
+          "name": "OpenAI: Introducing GPT-6.2 Astra and Sol",
+          "what": "OpenAI's own announcement.",
+          "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+          "tags": [
+            "official"
+          ]
+        },
+        {
+          "name": "9to5Mac, Nov 17 2026",
+          "what": "Plans, Ultrafast, and the coding-test result.",
+          "link": "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/",
+          "tags": [
+            "news"
+          ]
+        },
+        {
+          "name": "The Decoder, Nov 17 2026",
+          "what": "What each model is for.",
+          "link": "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/",
+          "tags": [
+            "news"
+          ]
+        },
+        {
+          "name": "Android Authority, Nov 18 2026",
+          "what": "Early testers' problems and OpenAI's reply.",
+          "link": "https://www.androidauthority.com/openai-gpt-6-2-astra-sol-3736420/",
+          "tags": [
+            "news"
+          ]
+        }
       ]
     }
   ],
   "note": "Start with Sol for everyday work. Test small before you trust it with big.",
-  "sources": ["https://openai.com/index/introducing-gpt-6-2-astra-sol/", "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/", "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/", "https://www.androidauthority.com/openai-gpt-6-2-astra-sol-3736420/"],
-  "updated": "2026-11-18"
+  "sources": [
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+    "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/",
+    "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/",
+    "https://www.androidauthority.com/openai-gpt-6-2-astra-sol-3736420/"
+  ],
+  "updated": "2026-11-18",
+  "cover": "assets/covers/gpt62.jpg"
 }
