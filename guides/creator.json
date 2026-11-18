@@ -1,0 +1,67 @@
+{
+  "slug": "creator",
+  "title": "3 free tools that do the boring part of editing",
+  "intro": "Cut silences, trim clips without losing quality, and post everywhere from one place. All three are free and open source.",
+  "reel": "From the reel: Stop editing every video by hand",
+  "sections": [
+    {
+      "heading": "The tools",
+      "tools": [
+        {
+          "name": "Auto-Editor",
+          "what": "Cuts out the silent parts of a video by itself, based on loudness. It can also hand the cut to Premiere Pro, DaVinci Resolve or Final Cut Pro, so you keep editing there.",
+          "link": "https://github.com/WyattBlue/auto-editor",
+          "tags": [
+            "free",
+            "Unlicense"
+          ],
+          "copy": [
+            {
+              "label": "Cut silences",
+              "text": "auto-editor example.mp4"
+            },
+            {
+              "label": "Send the cut to Premiere Pro (use resolve or final-cut-pro for the others)",
+              "text": "auto-editor example.mp4 --export premiere"
+            }
+          ]
+        },
+        {
+          "name": "LosslessCut",
+          "what": "Trim, cut and join video and audio without re-saving the whole file, so there is no quality loss and it is fast.",
+          "link": "https://github.com/mifi/lossless-cut/releases",
+          "tags": [
+            "free",
+            "open source",
+            "GPL-2.0"
+          ]
+        },
+        {
+          "name": "Postiz",
+          "what": "Schedule one post to Instagram, YouTube, TikTok, LinkedIn, X, Threads and more from one place. Free if you run it yourself; there is also a paid cloud version.",
+          "link": "https://docs.postiz.com/quickstart",
+          "tags": [
+            "free if self-hosted",
+            "AGPL-3.0"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Start here",
+      "steps": [
+        "Install Auto-Editor (instructions at auto-editor.com/installing) and run it on one talking video.",
+        "Open the result in your editor and check the cuts before you trust it.",
+        "Use LosslessCut for quick trims and joins you don't need a full editor for.",
+        "Try Postiz with one platform first, then add the rest."
+      ]
+    }
+  ],
+  "note": "The tools do the cutting. You make the video worth watching.",
+  "sources": [
+    "https://github.com/WyattBlue/auto-editor",
+    "https://github.com/mifi/lossless-cut",
+    "https://github.com/gitroomhq/postiz-app"
+  ],
+  "updated": "2026-11-18"
+}

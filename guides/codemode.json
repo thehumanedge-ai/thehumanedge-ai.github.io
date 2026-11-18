@@ -1,0 +1,43 @@
+{
+  "slug": "codemode",
+  "title": "Code Mode: Cloudflare's faster way to use MCP tools",
+  "intro": "Instead of calling tools one at a time, the AI writes one small program that does the whole job, and it runs in a locked sandbox.",
+  "reel": "From the reel: Your AI agent is using MCP tools the slow way",
+  "sections": [
+    {
+      "heading": "Read it from Cloudflare",
+      "tools": [
+        {
+          "name": "Code Mode: the better way to use MCP",
+          "what": "The idea: turn MCP tools into a code API and let the AI write code against it, because models have seen far more real code than tool calls.",
+          "link": "https://blog.cloudflare.com/code-mode/",
+          "tags": [
+            "Cloudflare blog"
+          ]
+        },
+        {
+          "name": "Give agents an entire API in 1,000 tokens",
+          "what": "Cloudflare's API has over 2,500 endpoints. With Code Mode their MCP server covers all of it in around 1,000 tokens, instead of over a million.",
+          "link": "https://blog.cloudflare.com/code-mode-mcp/",
+          "tags": [
+            "Cloudflare blog"
+          ]
+        },
+        {
+          "name": "Code Mode SDK",
+          "what": "The code, if you want to try it in your own agent.",
+          "link": "https://github.com/cloudflare/agents/tree/main/packages/codemode",
+          "tags": [
+            "open source"
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "Fewer round trips, smaller prompts. Worth watching.",
+  "sources": [
+    "https://blog.cloudflare.com/code-mode/",
+    "https://blog.cloudflare.com/code-mode-mcp/"
+  ],
+  "updated": "2026-11-18"
+}

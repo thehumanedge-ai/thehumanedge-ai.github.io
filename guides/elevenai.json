@@ -22,13 +22,39 @@
     {
       "heading": "Read it yourself",
       "tools": [
-        { "name": "ElevenAI page", "what": "What it does, early access sign-up, and the note about your audio and your Mac.", "link": "https://elevenlabs.io/elevenai", "tags": ["official"] },
-        { "name": "ElevenAI usage guide", "what": "How the notice works and which meetings to avoid.", "link": "https://elevenlabs.io/elevenai-guide", "tags": ["official"] },
-        { "name": "TechCrunch, Nov 13 2026", "what": "The launch report.", "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/", "tags": ["news"] }
+        {
+          "name": "ElevenAI page",
+          "what": "What it does, early access sign-up, and the note about your audio and your Mac.",
+          "link": "https://elevenlabs.io/elevenai",
+          "tags": [
+            "official"
+          ]
+        },
+        {
+          "name": "ElevenAI usage guide",
+          "what": "How the notice works and which meetings to avoid.",
+          "link": "https://elevenlabs.io/elevenai-guide",
+          "tags": [
+            "official"
+          ]
+        },
+        {
+          "name": "TechCrunch, Nov 13 2026",
+          "what": "The launch report.",
+          "link": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+          "tags": [
+            "news"
+          ]
+        }
       ]
     }
   ],
   "note": "The AI takes the notes. You still decide who gets told.",
-  "sources": ["https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/", "https://elevenlabs.io/elevenai", "https://elevenlabs.io/elevenai-guide"],
-  "updated": "2026-11-18"
+  "sources": [
+    "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+    "https://elevenlabs.io/elevenai",
+    "https://elevenlabs.io/elevenai-guide"
+  ],
+  "updated": "2026-11-18",
+  "cover": "assets/covers/elevenai.jpg"
 }

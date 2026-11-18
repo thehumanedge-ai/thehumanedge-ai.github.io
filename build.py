@@ -77,6 +77,20 @@ background:var(--ink);color:var(--paper);font-weight:800;display:flex;align-item
 .foot{{text-align:center;font-size:12px;color:var(--soft);margin-top:18px}}
 .list a{{display:block;background:var(--card);border:2.5px solid var(--line);border-radius:14px;padding:14px 16px;margin:0 0 12px;
 color:var(--ink);text-decoration:none;font-weight:800;box-shadow:4px 4px 0 var(--ink)}}
+.meta{{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0 0}}
+.upd{{font-size:13px;font-weight:800;color:var(--soft);border:1.5px dashed var(--shadow);border-radius:999px;padding:3px 11px}}
+.bar{{display:flex;gap:10px;margin:18px 0 6px}}
+.bar button{{flex:1;font:800 15px '{f['body']}',sans-serif;border:2.5px solid var(--line);border-radius:12px;padding:12px 10px;
+cursor:pointer;box-shadow:4px 4px 0 var(--ink);background:var(--card);color:var(--ink)}}
+.bar button.main{{background:var(--accent);color:var(--accent-ink)}}
+.bar button.ok{{background:var(--ink);color:var(--paper)}}
+.grid{{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
+.grid a{{display:block;background:var(--card);border:2.5px solid var(--line);border-radius:16px;overflow:hidden;color:var(--ink);
+text-decoration:none;box-shadow:4px 4px 0 var(--ink)}}
+.grid img{{display:block;width:100%;aspect-ratio:9/12;object-fit:cover;object-position:top;background:var(--shadow)}}
+.grid .ph{{aspect-ratio:9/12;display:flex;align-items:center;justify-content:center;background:var(--shadow);
+font-family:'{f['display']}',sans-serif;font-size:18px;line-height:1.15;padding:14px;text-align:center;overflow-wrap:anywhere}}
+.grid span{{display:block;padding:10px 12px 12px;font-weight:800;font-size:15px;line-height:1.25}}
 """
 
 
@@ -87,6 +101,19 @@ document.querySelectorAll('button.cp').forEach(b=>b.addEventListener('click',asy
     const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();}
   b.textContent='Copied';b.classList.add('ok');setTimeout(()=>{b.textContent='Copy';b.classList.remove('ok')},1600);
 }));
+async function put(t){try{await navigator.clipboard.writeText(t);return true}catch(_){const a=document.createElement('textarea');
+  a.value=t;document.body.appendChild(a);a.select();const ok=document.execCommand('copy');a.remove();return ok}}
+function flash(b,txt){const o=b.textContent;b.textContent=txt;b.classList.add('ok');setTimeout(()=>{b.textContent=o;b.classList.remove('ok')},1700)}
+const all=document.getElementById('copyall');
+if(all)all.addEventListener('click',async()=>{
+  const lines=[...document.querySelectorAll('.card')].map(c=>{const n=c.querySelector('h3')?.textContent||'';
+    const l=c.querySelector('a.open')?.href||'';const k=[...c.querySelectorAll('code')].map(x=>x.textContent);
+    return [n,l,...k].filter(Boolean).join('\\n')}).filter(Boolean);
+  if(await put(document.title.split(' | ')[0]+'\\n\\n'+lines.join('\\n\\n')+'\\n\\n'+location.href))flash(all,'Copied all');});
+const sh=document.getElementById('share');
+if(sh)sh.addEventListener('click',async()=>{const d={title:document.title,url:location.href};
+  if(navigator.share){try{await navigator.share(d);return}catch(_){return}}
+  if(await put(location.href))flash(sh,'Link copied');});
 </script>"""
 
 
@@ -110,6 +137,19 @@ def section(s) -> str:
     return out
 
 
+def nice_date(iso: str) -> str:
+    """2026-11-17 -> 17 Nov 2026"""
+    from datetime import date
+    try:
+        return date.fromisoformat(iso).strftime("%d %b %Y").lstrip("0")
+    except ValueError:
+        return iso
+
+
+def has_links(guide) -> bool:
+    return any(t.get("link") or t.get("copy") for s in guide.get("sections", []) for t in s.get("tools", []))
+
+
 def page(guide, theme, depth: int) -> str:
     up = "../" * depth
     sources = "".join(
@@ -124,8 +164,10 @@ def page(guide, theme, depth: int) -> str:
 {font_link(theme)}<style>{css(theme)}</style></head><body><div class="wrap">
 <div class="top"><a href="{up}">{e(theme['brand'])}</a><span>&middot;</span><span>{e(theme['handle'])}</span></div>
 <div class="hero"><img src="{up}{e(theme['mascot'])}" alt=""><h1>{e(guide['title'])}</h1></div>
-{f'<span class="reel">{e(guide["reel"])}</span>' if guide.get("reel") else ""}
+<div class="meta">{f'<span class="reel" style="margin:0">{e(guide["reel"])}</span>' if guide.get("reel") else ""}
+{f'<span class="upd">Updated {e(nice_date(guide["updated"]))}</span>' if guide.get("updated") else ""}</div>
 <p class="intro">{e(guide.get('intro'))}</p>
+<div class="bar">{'<button id="copyall" class="main" type="button">Copy all links</button>' if has_links(guide) else ''}<button id="share" type="button">Share this list</button></div>
 {body}
 {f'<div class="note">{e(guide["note"])}</div>' if guide.get("note") else ""}
 <a class="follow" href="{e(theme['profile_url'])}">Follow {e(theme['handle'])} for more &rarr;</a>
@@ -135,12 +177,16 @@ def page(guide, theme, depth: int) -> str:
 
 
 def index(guides, theme) -> str:
-    items = "".join(f'<a href="{e(g["slug"])}/">{e(g["title"])}</a>' for g in guides)
+    def tile(g):
+        pic = f'<img src="{e(g["cover"])}" alt="" loading="lazy">' if g.get("cover") else f'<div class="ph">{e(g["title"])}</div>'
+        return f'<a href="{e(g["slug"])}/">{pic}<span>{e(g["title"])}</span></a>'
+    newest = sorted(guides, key=lambda g: g.get("updated", ""), reverse=True)
+    items = "".join(tile(g) for g in newest)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Guides | {e(theme['brand'])}</title>
 {font_link(theme)}<style>{css(theme)}</style></head><body><div class="wrap">
 <div class="hero"><img src="{e(theme['mascot'])}" alt=""><h1>{e(theme['brand'])} guides</h1></div>
-<p class="intro">Every link and command from the reels, in one place.</p><div class="list">{items}</div>
+<p class="intro">Every link and command from the reels, in one place. Newest first.</p><div class="grid">{items}</div>
 <a class="follow" href="{e(theme['profile_url'])}">Follow {e(theme['handle'])} &rarr;</a>
 <div class="foot">{e(theme['footer'])}</div></div></body></html>"""
 
@@ -153,9 +199,7 @@ def main() -> int:
     guides = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((ROOT / "guides").glob("*.json"))]
     if DIST.exists():
         shutil.rmtree(DIST)
-    (DIST / "assets").mkdir(parents=True)
-    for a in (ROOT / "assets").glob("*"):
-        shutil.copy(a, DIST / "assets" / a.name)
+    shutil.copytree(ROOT / "assets", DIST / "assets")        # includes assets/covers/
     for g in guides:
         out = DIST / g["slug"] / "index.html"
         out.parent.mkdir(parents=True)

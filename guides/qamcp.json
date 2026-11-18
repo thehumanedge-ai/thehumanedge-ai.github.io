@@ -7,11 +7,33 @@
     {
       "heading": "Get it",
       "tools": [
-        { "name": "QAmcp", "what": "Runs on your computer. Needs Node.js.", "link": "https://qamcp.dev", "tags": ["free", "open source"], "copy": [
-          { "label": "Try it on the broken demo server first", "text": "npx qamcp-cli --demo" },
-          { "label": "Test a real server (put its link at the end)", "text": "npx qamcp-cli <server link>" }
-        ] },
-        { "name": "Code", "what": "The source and the full list of checks.", "link": "https://github.com/QAmcp/qamcp-cli", "tags": ["GitHub"] }
+        {
+          "name": "QAmcp",
+          "what": "Runs on your computer. Needs Node.js.",
+          "link": "https://qamcp.dev",
+          "tags": [
+            "free",
+            "open source"
+          ],
+          "copy": [
+            {
+              "label": "Try it on the broken demo server first",
+              "text": "npx qamcp-cli --demo"
+            },
+            {
+              "label": "Test a real server (put its link at the end)",
+              "text": "npx qamcp-cli <server link>"
+            }
+          ]
+        },
+        {
+          "name": "Code",
+          "what": "The source and the full list of checks.",
+          "link": "https://github.com/QAmcp/qamcp-cli",
+          "tags": [
+            "GitHub"
+          ]
+        }
       ]
     },
     {
@@ -24,6 +46,10 @@
     }
   ],
   "note": "Check it first. Then decide if your AI should trust it.",
-  "sources": ["https://qamcp.dev", "https://github.com/QAmcp/qamcp-cli"],
-  "updated": "2026-11-18"
+  "sources": [
+    "https://qamcp.dev",
+    "https://github.com/QAmcp/qamcp-cli"
+  ],
+  "updated": "2026-11-18",
+  "cover": "assets/covers/qamcp.jpg"
 }

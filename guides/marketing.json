@@ -1,0 +1,54 @@
+{
+  "slug": "marketing",
+  "title": "Ask your AI about your marketing numbers",
+  "intro": "Google's official MCP servers let your AI answer questions from your real Analytics and Ads data. Plus a free scheduler for your posts.",
+  "reel": "From the reel: Marketers, stop exporting reports",
+  "sections": [
+    {
+      "heading": "The tools",
+      "tools": [
+        {
+          "name": "Google Analytics MCP",
+          "what": "Ask things like \"which page got the most visitors last week?\" and it answers from your real Analytics data. It only reads by default; changes need an extra setting.",
+          "link": "https://github.com/googleanalytics/google-analytics-mcp",
+          "tags": [
+            "official",
+            "Apache-2.0"
+          ],
+          "copy": [
+            {
+              "label": "Run it (after the Google setup in the README)",
+              "text": "pipx run analytics-mcp"
+            }
+          ]
+        },
+        {
+          "name": "Google Ads MCP",
+          "what": "Ask how your campaigns are doing in plain words. It can also make some changes, so start with the read-only setup the README describes (labels and assets off) until you trust it.",
+          "link": "https://github.com/googleads/google-ads-mcp",
+          "tags": [
+            "official",
+            "Apache-2.0",
+            "start read-only"
+          ]
+        },
+        {
+          "name": "Postiz",
+          "what": "Schedule posts to Instagram, YouTube, TikTok, LinkedIn and more from one place. Free if you run it yourself.",
+          "link": "https://docs.postiz.com/quickstart",
+          "tags": [
+            "free if self-hosted",
+            "AGPL-3.0"
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The AI reads the numbers. You still decide what to do with them.",
+  "sources": [
+    "https://github.com/googleanalytics/google-analytics-mcp",
+    "https://github.com/googleads/google-ads-mcp",
+    "https://github.com/gitroomhq/postiz-app"
+  ],
+  "updated": "2026-11-18"
+}

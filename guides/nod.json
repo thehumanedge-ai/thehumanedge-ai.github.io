@@ -7,9 +7,33 @@
     {
       "heading": "Get it",
       "tools": [
-        { "name": "Nod for Mac", "what": "macOS 14 or newer. Apple silicon download below; Intel version is on the GitHub page.", "link": "https://github.com/n8n-io/nod/releases/latest/download/nod-arm64.dmg", "tags": ["free", "open source", "research preview"] },
-        { "name": "Nod for Windows", "what": "Windows 11 (preview).", "link": "https://github.com/n8n-io/nod/releases/latest/download/nod-Setup-x64.exe", "tags": ["free", "preview"] },
-        { "name": "Code and docs", "what": "Everything else, including the Linux preview and how it keeps you safe.", "link": "https://github.com/n8n-io/nod", "tags": ["Apache 2.0"] }
+        {
+          "name": "Nod for Mac",
+          "what": "macOS 14 or newer. Apple silicon download below; Intel version is on the GitHub page.",
+          "link": "https://github.com/n8n-io/nod/releases/latest/download/nod-arm64.dmg",
+          "tags": [
+            "free",
+            "open source",
+            "research preview"
+          ]
+        },
+        {
+          "name": "Nod for Windows",
+          "what": "Windows 11 (preview).",
+          "link": "https://github.com/n8n-io/nod/releases/latest/download/nod-Setup-x64.exe",
+          "tags": [
+            "free",
+            "preview"
+          ]
+        },
+        {
+          "name": "Code and docs",
+          "what": "Everything else, including the Linux preview and how it keeps you safe.",
+          "link": "https://github.com/n8n-io/nod",
+          "tags": [
+            "Apache 2.0"
+          ]
+        }
       ]
     },
     {
@@ -24,6 +48,10 @@
     }
   ],
   "note": "It does the clicking. You still say yes.",
-  "sources": ["https://blog.n8n.io/meet-nod/", "https://github.com/n8n-io/nod"],
-  "updated": "2026-11-17"
+  "sources": [
+    "https://blog.n8n.io/meet-nod/",
+    "https://github.com/n8n-io/nod"
+  ],
+  "updated": "2026-11-17",
+  "cover": "assets/covers/nod.jpg"
 }

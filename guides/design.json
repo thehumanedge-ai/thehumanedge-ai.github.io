@@ -1,0 +1,53 @@
+{
+  "slug": "design",
+  "title": "Let AI read your design file, not a screenshot",
+  "intro": "Three ways to give your AI the real layers, spacing and colours of your design, so the code matches.",
+  "reel": "From the reel: Designers, stop sending screenshots to AI",
+  "sections": [
+    {
+      "heading": "The tools",
+      "tools": [
+        {
+          "name": "Figma MCP server",
+          "what": "Made by Figma. Your AI reads your real frames, layers, spacing and colours, so the code it writes matches the design. The remote server is the one Figma recommends; the desktop server needs a Dev or Full seat on a paid plan.",
+          "link": "https://help.figma.com/hc/en-us/articles/32132100833559",
+          "tags": [
+            "official"
+          ],
+          "copy": [
+            {
+              "label": "Remote server address",
+              "text": "https://mcp.figma.com/mcp"
+            }
+          ]
+        },
+        {
+          "name": "Penpot MCP",
+          "what": "Penpot is a free, open-source design tool like Figma. Its official MCP lets your AI read and change a Penpot design file. It now lives inside the main Penpot code.",
+          "link": "https://github.com/penpot/penpot/tree/develop/mcp",
+          "tags": [
+            "free",
+            "open source",
+            "MPL-2.0"
+          ]
+        },
+        {
+          "name": "Frontend design skill",
+          "what": "A free skill for Claude from Anthropic. It gives Claude real design guidance, so pages it builds stop looking like every other AI site.",
+          "link": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+          "tags": [
+            "free",
+            "Claude skill"
+          ]
+        }
+      ]
+    }
+  ],
+  "note": "The AI builds it. You still decide what looks right.",
+  "sources": [
+    "https://help.figma.com/hc/en-us/articles/32132100833559",
+    "https://github.com/penpot/penpot-mcp",
+    "https://github.com/anthropics/skills"
+  ],
+  "updated": "2026-11-18"
+}

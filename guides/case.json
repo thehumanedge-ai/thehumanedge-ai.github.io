@@ -7,7 +7,15 @@
     {
       "heading": "The court's order",
       "tools": [
-        { "name": "Mata v. Avianca: Opinion and Order on Sanctions", "what": "U.S. District Court, Southern District of New York, June 22, 2023. The judge says using a reliable AI tool is not wrong in itself. The penalty was for not checking, and for standing by the fake cases after the court questioned them.", "link": "https://ctd.uscourts.gov/sites/default/files/Mata-v.-Avianca.pdf", "tags": ["court order", "PDF"] }
+        {
+          "name": "Mata v. Avianca: Opinion and Order on Sanctions",
+          "what": "U.S. District Court, Southern District of New York, June 22, 2023. The judge says using a reliable AI tool is not wrong in itself. The penalty was for not checking, and for standing by the fake cases after the court questioned them.",
+          "link": "https://ctd.uscourts.gov/sites/default/files/Mata-v.-Avianca.pdf",
+          "tags": [
+            "court order",
+            "PDF"
+          ]
+        }
       ]
     },
     {
@@ -21,6 +29,9 @@
     }
   ],
   "note": "AI can write something that sounds true and isn't. Open the source yourself.",
-  "sources": ["https://ctd.uscourts.gov/sites/default/files/Mata-v.-Avianca.pdf"],
-  "updated": "2026-11-18"
+  "sources": [
+    "https://ctd.uscourts.gov/sites/default/files/Mata-v.-Avianca.pdf"
+  ],
+  "updated": "2026-11-18",
+  "cover": "assets/covers/case.jpg"
 }

@@ -1,0 +1,81 @@
+{
+  "slug": "launch",
+  "title": "3 free checks before you launch your AI-built app",
+  "intro": "AI writes code fast, but it repeats the same mistakes. These three checks take about ten minutes.",
+  "reel": "From the reel: You built an app with AI. Check these before you launch",
+  "sections": [
+    {
+      "heading": "The checks",
+      "tools": [
+        {
+          "name": "1. Gitleaks: leaked passwords and keys",
+          "what": "Scans your project for passwords, API keys and tokens that ended up in the code. Leaked keys are how people get surprise bills.",
+          "link": "https://github.com/gitleaks/gitleaks",
+          "tags": [
+            "free",
+            "MIT"
+          ],
+          "copy": [
+            {
+              "label": "Install on Mac",
+              "text": "brew install gitleaks"
+            },
+            {
+              "label": "Scan your project's git history (run inside the project folder)",
+              "text": "gitleaks git -v"
+            },
+            {
+              "label": "Scan a folder",
+              "text": "gitleaks dir -v ."
+            }
+          ]
+        },
+        {
+          "name": "2. npm audit: known security holes",
+          "what": "Comes with npm. It checks the packages your app uses against a list of known vulnerabilities and tells you how to fix them.",
+          "link": "https://docs.npmjs.com/cli/commands/npm-audit",
+          "tags": [
+            "free",
+            "comes with npm"
+          ],
+          "copy": [
+            {
+              "label": "Check",
+              "text": "npm audit"
+            },
+            {
+              "label": "Fix what can be fixed automatically",
+              "text": "npm audit fix"
+            }
+          ]
+        },
+        {
+          "name": "3. Lighthouse: slow, broken on phones, hard to use",
+          "what": "Built into Chrome. It scores your page for performance, accessibility, SEO and more, and lists what to fix.",
+          "link": "https://developer.chrome.com/docs/lighthouse/overview",
+          "tags": [
+            "free",
+            "in Chrome"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Run Lighthouse",
+      "steps": [
+        "Open your site in Chrome on a computer.",
+        "Open DevTools (right-click, Inspect).",
+        "Click the Lighthouse tab.",
+        "Click Analyze page load and wait 30 to 60 seconds.",
+        "Fix the red items first."
+      ]
+    }
+  ],
+  "note": "Three checks, ten minutes. That's the part AI doesn't do for you.",
+  "sources": [
+    "https://github.com/gitleaks/gitleaks",
+    "https://docs.npmjs.com/cli/v10/commands/npm-audit",
+    "https://developer.chrome.com/docs/lighthouse/overview"
+  ],
+  "updated": "2026-11-18"
+}
